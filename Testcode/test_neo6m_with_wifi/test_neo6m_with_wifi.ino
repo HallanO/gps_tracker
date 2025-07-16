@@ -10,12 +10,12 @@
 #include "addons/RTDBHelper.h"
 
 // WiFi credentials
-const char* ssid = "Lte4";
-const char* password = "123456789";
+const char* ssid = "Lte4";// replace with your WiFi name
+const char* password = "123456789";//replace with your wifi password
 
 // Firebase configuration
-#define FIREBASE_HOST "gps-tracker-a713b-default-rtdb.firebaseio.com"
-#define FIREBASE_AUTH "XkvlEARvrpEYPPWX8aVd5CFmYz2M0fvjYsHLz9pC"
+#define FIREBASE_HOST "gps-tracker-a713b-default-rtdb.firebaseio.com"// replace with you firebase host url
+#define FIREBASE_AUTH "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"// replace with your firebase secretkey
 
 FirebaseData fbdo;
 FirebaseAuth auth;
