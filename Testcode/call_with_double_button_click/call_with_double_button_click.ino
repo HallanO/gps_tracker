@@ -80,7 +80,7 @@ void makeCall() {
   callInProgress = true;
   
   Serial.println("Initiating call...");
-  SIM800_SERIAL.println("ATD+256751505979;"); // Change with your phone number
+  SIM800_SERIAL.println("ATD+xxxyyyyyyyyy;"); // Change with your phone number(xxx is country code yyyyyyyyy is phone number)
   updateSerial();
   
   // Wait for call to establish
