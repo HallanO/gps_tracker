@@ -5,7 +5,7 @@
  * 
  * Hardware Connections:
  * - Neo-6M GPS: VCC->3.3V, GND->GND, TX->GPIO20, RX->GPIO21
- * - I²C to ESP32-B: SDA->GPIO21, SCL->GPIO22
+ * - I²C to ESP32-B: SDA->GPIO8, SCL->GPIO9
  * 
  * Note: GPIO21 is shared between GPS RX and I²C SDA, but this works
  * because I²C is bidirectional and GPS only sends data to ESP32
