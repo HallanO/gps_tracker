@@ -5,7 +5,7 @@
  * 
  * Hardware Connections:
  * - SIM800L GSM: VCC->3.7V, GND->GND, TX->GPIO20, RX->GPIO21, RST->GPIO6
- * - I²C from ESP32-A: SDA->GPIO21, SCL->GPIO22
+ * - I²C from ESP32-A: SDA->GPIO8, SCL->GPIO9
  * 
  * Note: GPIO21 is shared between SIM800L TX and I²C SDA - this works because
  * I²C communication happens at different times than GSM communication
@@ -31,7 +31,7 @@ bool callInProgress = false;  // Track if a call is currently being made
 unsigned long firstTriggerTime = 0;  // Time of first trigger
 bool firstTriggerDetected = false;   // Flag for first trigger
 const unsigned long DOUBLE_TRIGGER_WINDOW = 500; // 500ms window for double trigger
-const char* emergencyNumber = "+256751505979"; // Emergency contact number
+const char* emergencyNumber = "+xxxyyyyyyyyy"; // Emergency contact number( where xxx is the country code and yyyyyyyyy is the emergency phone number)
 
 // APN settings - replace with your carrier's APN
 const char* apn = "internet";
@@ -39,8 +39,8 @@ const char* apn_user = "";
 const char* apn_pass = "";
 
 // Firebase configuration
-const char* firebase_host = "gps-tracker-a713b-default-rtdb.firebaseio.com";
-const char* firebase_auth = "XkvlEARvrpEYPPWX8aVd5CFmYz2M0fvjYsHLz9pC";
+const char* firebase_host = "gps-tracker-a713b-default-rtdb.firebaseio.com";//replace with your firebase host url
+const char* firebase_auth = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";//replace with your firebase secret key
 
 // Device identifier
 String deviceId = "tracker_001";
